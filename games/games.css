@@ -1,0 +1,19 @@
+.gamephoto{
+    height: 280px;
+    width: 350px;
+    object-fit: cover;
+}
+
+.gamedetails *{
+    margin: 10px 30px;
+    font-family: "font";
+}
+
+.btns a{
+    color: var(--white);
+    background-color: var(--logo-G-dark);
+}
+
+.btns a:hover{
+    background-color: var(--logo-G);
+}

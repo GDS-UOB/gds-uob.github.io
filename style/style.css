@@ -1,0 +1,238 @@
+:root{
+    --logo-G: #E06E8B;
+    --logo-D: #A2CC26;
+    --logo-S: #B3DBF2;
+    --logo-G-dark: #BD2633;
+    --logo-D-dark: #45891A;
+    --logo-S-dark: #33A2F6;
+
+    --transparent: #00000000;
+
+    --black: #161616;
+    --white: #EAE7DE;
+
+    --background: #5d8a91;
+    --background2: #568a67;
+    --background3: #8f4e63;
+
+    --accent: #b83838;
+    --accent2: #3874b8;
+    --accent3: #498d3c;
+
+    --discord-col: #728ADA;
+    --guild-col: #5ABBA2;
+    --discord-col-hover: #adbdf5;
+    --guild-col-hover: #94dfcc;
+}
+
+
+.debug{
+    border: solid 1px red !important;
+}
+
+@font-face {
+    font-family: "font";
+    src: url("/style/fonts/verdana.ttf");
+}
+
+@font-face {
+    font-family: "amiga";
+    src: url("/style/fonts/Px437_AMI_EGA_8x8.ttf");
+}
+
+*::selection{
+    color: var(--white);
+    background-color: var(--accent);
+}
+
+body{
+    margin: 0px;
+    color: var(--white);
+    
+    font-family: "font";
+    
+    background-image: linear-gradient(rgba(0, 0, 0, 0.20),rgba(0, 0, 0, 0.20)), url("/img/bkg.gif");
+    background-color: var(--background);
+    background-blend-mode: overlay;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+body.R-theme{
+    background-color: var(--background3);
+    background-image: linear-gradient(rgba(0, 0, 0, 0),rgba(0, 0, 0, 0)), url("/img/bkg.gif");
+}
+
+body.R-theme .block, body.R-theme .multiblock{
+    border: 4px solid var(--logo-G-dark);
+}
+
+body.R-theme *::selection{
+    background-color: var(--accent);
+}
+
+body.G-theme{
+    background-color: var(--background2);
+}
+
+body.G-theme .block, body.G-theme .multiblock{
+    border: 4px solid var(--logo-D-dark);
+}
+
+body.G-theme *::selection{
+    background-color: var(--accent3);
+}
+
+body.B-theme{
+    background-color: var(--background);
+}
+
+body.B-theme .block, body.B-theme .multiblock{
+    border: 4px solid var(--logo-S-dark);
+}
+
+body.B-theme *::selection{
+    background-color: var(--accent2);
+}
+
+nav{
+    height: 4em;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+
+    font-family: "amiga";
+
+    margin: 10px 30px;
+}
+
+nav img{
+    height: 3em;
+}
+
+nav a{
+    font-size: 1.5em;
+}
+
+.navlinks a{
+    color: var(--white);
+}
+
+body.R-theme .navlinks a{
+    text-shadow: 4px -2px var(--accent);
+}
+body.R-theme .navlinks a:hover{
+    text-shadow: 4px -2px var(--white);
+    color: var(--accent);
+}
+body.B-theme .navlinks a{
+    text-shadow: 4px -2px var(--accent2);
+}
+body.B-theme .navlinks a:hover{
+    text-shadow: 4px -2px var(--white);
+    color: var(--accent2);
+}
+body.G-theme .navlinks a{
+    text-shadow: 4px -2px var(--accent3);
+}
+body.G-theme .navlinks a:hover{
+    text-shadow: 4px -2px var(--white);
+    color: var(--accent3);
+}
+
+div.bot{
+    width: 75vw;
+    margin: 0px auto;
+}
+
+h1, h2, h3, h4{
+    font-family: "amiga";
+}
+
+.normalfont{
+    font-family: "font";
+}
+
+.block{
+    width: 55vw;
+    
+    margin: 25px auto 25px auto;
+    padding: 5px 15px;
+
+    border: 4px solid var(--logo-D-dark);
+
+    background-color: var(--black);
+}
+
+.titleblock{
+    border: none !important;
+    text-align: center;
+    background-color: var(--transparent);
+}
+
+.titleblock h1{
+    font-size: 2.8em;
+}
+
+.bigblock{
+    width: 75vw;
+}
+
+.multiblocks{
+    width: 90vw;
+    background-color: var(--transparent);
+    border: none !important;
+    
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.multiblock{
+    width: 45%;
+    margin: 15px;
+
+    background-color: var(--black);
+    border: 4px solid var(--logo-D-dark);
+}
+
+.bigmultiblock{
+    width: 75%;
+    margin: auto;
+}
+
+.columns{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    
+}
+
+.columns.three-col div{
+    width: 33%;
+}
+
+.btns{
+    padding: 20px;
+    margin: 15px;
+}
+
+.btns a{
+    padding: 15px;
+    margin: 10px;
+    
+    font-family: "amiga";
+    text-decoration: none;
+
+    color: var(--white);
+    background-color: var(--logo-S-dark);
+}
+
+.btns a:hover{
+    background-color: var(--logo-S);
+}

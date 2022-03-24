@@ -1,0 +1,15 @@
+.btns a.discord-btn{
+    background-color: var(--discord-col);
+}
+
+.btns a.discord-btn:hover{
+    background-color: var(--discord-col-hover);
+}
+
+.btns a.guild-btn{
+    background-color: var(--guild-col);
+}
+
+.btns a.guild-btn:hover{
+    background-color: var(--guild-col-hover);
+}

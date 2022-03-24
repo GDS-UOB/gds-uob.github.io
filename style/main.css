@@ -1,0 +1,76 @@
+
+h1{
+    font-size: 2.5em;
+}
+
+h2{
+    font-size: 2em;
+}
+
+/*
+h1, h2, h3{
+    text-shadow: -3px -3px var(--black), 3px -3px var(--black), -3px 3px var(--black), 3px 3px var(--black);
+}
+*/
+
+.main{
+    width: 80vw;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+    font-family: "amiga";
+}
+
+.mainbox{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+.mainbox div{
+    width: 48%;
+}
+
+.logobox{
+    text-align: center;
+}
+
+.logo{
+    width: 100%;
+}
+
+.pages{
+    position: relative;
+}
+
+.pages ul{
+    position: absolute;
+    top: 50%;
+    left: 45%;
+    transform: translate(-50%, -50%);
+
+    list-style-type: none;
+}
+
+.pages ul li{
+    margin: 25px;
+    
+    font-size: 3em;
+}
+
+.pages ul li::before{
+    content: ">";
+}
+
+.pages ul a{
+    color: var(--white);
+    text-shadow: 6px -4px var(--accent);
+}
+
+
+.pages ul a:hover{
+    color: var(--accent);
+    text-shadow: 6px -4px var(--white);
+}

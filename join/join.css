@@ -1,4 +1,5 @@
 .btns a.discord-btn{
+    color: var(--white);
     background-color: var(--discord-col);
 }
 
@@ -7,6 +8,7 @@
 }
 
 .btns a.guild-btn{
+    color: var(--white);
     background-color: var(--guild-col);
 }
 

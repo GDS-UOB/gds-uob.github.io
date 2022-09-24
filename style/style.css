@@ -121,22 +121,52 @@ nav a{
     color: var(--white);
 }
 
+
+body.R-theme a{
+    color: var(--accent);
+}
+body.R-theme a:hover{
+    color: var(--white);
+    background-color: var(--accent);
+}
+body.B-theme a{
+    color: var(--accent2);
+}
+body.B-theme a:hover{
+    color: var(--white);
+    background-color: var(--accent2);
+}
+body.G-theme a{
+    color: var(--accent3);
+}
+body.G-theme a:hover{
+    color: var(--white);
+    background-color: var(--accent3);
+}
+
+
 body.R-theme .navlinks a{
+    color: var(--white);
     text-shadow: 4px -2px var(--accent);
+    background-color: transparent;
 }
 body.R-theme .navlinks a:hover{
     text-shadow: 4px -2px var(--white);
     color: var(--accent);
 }
 body.B-theme .navlinks a{
+    color: var(--white);
     text-shadow: 4px -2px var(--accent2);
+    background-color: transparent;
 }
 body.B-theme .navlinks a:hover{
     text-shadow: 4px -2px var(--white);
     color: var(--accent2);
 }
 body.G-theme .navlinks a{
+    color: var(--white);
     text-shadow: 4px -2px var(--accent3);
+    background-color: transparent;
 }
 body.G-theme .navlinks a:hover{
     text-shadow: 4px -2px var(--white);
@@ -150,6 +180,7 @@ div.bot{
 
 h1, h2, h3, h4{
     font-family: "amiga";
+    line-height: 1.6;
 }
 
 .normalfont{
@@ -193,7 +224,7 @@ h1, h2, h3, h4{
 }
 
 .multiblock{
-    width: 45%;
+    max-width: 530px;
     margin: 15px;
 
     background-color: var(--black);

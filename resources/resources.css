@@ -1,9 +1,0 @@
-
-.resources a{
-    color: var(--logo-G);
-}
-
-.resources a:hover{
-    color: var(--white);
-    background-color: var(--logo-G);
-}

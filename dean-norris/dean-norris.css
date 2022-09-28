@@ -1,0 +1,45 @@
+:root{
+    --hot-pink: #ff00b3;
+}
+
+body{
+    background-image: url("bg.gif");
+    background-color: var(--hot-pink);
+    background-blend-mode: color-burn;
+    background-size: auto;
+    background-attachment: local;
+
+    animation:
+        dean-norris 10s linear infinite,
+        dean-norris-bg 20s linear infinite
+        ;
+}
+
+nav{
+    background-color: black;
+}
+
+
+@keyframes dean-norris{
+    0% {
+		background-position: 0% 0%;
+	}
+	100% {
+        background-position: 100% 100%;
+	}
+}
+
+@keyframes dean-norris-bg {
+    0% {
+        background-color: var(--hot-pink);
+    }
+    33% {
+        background-color: #00fff2;
+    }
+    66%{
+        background-color: #5e8643;
+    }
+    100% {
+        background-color: var(--hot-pink);
+    }
+}

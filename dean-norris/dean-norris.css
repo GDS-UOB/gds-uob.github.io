@@ -19,6 +19,21 @@ nav{
     background-color: black;
 }
 
+.dean1:hover {
+    animation: dean-scale-up 1s linear forwards;
+}
+
+@keyframes dean-scale-up {
+    0% {
+        width: 25%;
+        height: auto;
+    }
+    100%{
+        width: 40%;
+        height: auto;
+    }
+    
+}
 
 @keyframes dean-norris{
     0% {
